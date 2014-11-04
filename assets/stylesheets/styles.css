@@ -15,10 +15,6 @@
 }
 
 * {
-	margin: 0 auto;
-}
-
-* {
 	box-sizing: border-box;
 }
 
@@ -39,30 +35,36 @@ body {
 
 .container {
 	max-width: 600px;
-	height: 1200px;
+	height: 1000px;
 	margin: 0 auto;
 }
 
 /* ====== HEADER ====== */
 
 .header {
+	position: relative;
 	height: 80px;
 	background: #000000;
 	-moz-box-shadow: 0px 2px 4px 0px rgba(0,0,0,0.50);
 	box-shadow: 0px 2px 4px 0px rgba(0,0,0,0.50);
-	padding-top: 4%; 
+	padding-top: 3%; 
+	z-index: 100;
 }
 
 .logo {
 	font-weight: 600;
 	font-style: italic;
 	color: #FFFFFF;
-	font-size: 3.2em;
+	font-size: 1.65em;
 	text-align: center;
 	margin-bottom: 2%;
 }
 
-/* ====== SECTIONS ====== */
+.logo h1 {
+	margin-top: 0;
+}
+
+/* ====== ITEM BOXES ====== */
 
 .content {
 	max-width: 100%;
@@ -74,58 +76,73 @@ p {
 	letter-spacing: 3px;
 	text-align: center;
 	color: #FFFFFF;
-	padding-bottom: 8%;
 }
 
-img[src*="vinyl.png"] {
-	padding: 10% 30% 3% 30%;
-}
-
-img[src*="dvd.png"] {
-	padding: 10% 30% 3% 30%;
-}
-
-img[src*="cd.png"] {
-	padding: 10% 30% 3% 30%;
-}
-
+img[src*="vinyl.png"],
+img[src*="dvd.png"],
+img[src*="cd.png"],
 img[src*="mc.png"] {
-	padding: 10% 30% 3% 30%;
-}
-
-.left-column {
-	float: left;
-	width: 50%;
+	padding: 10% 30% 0% 30%;
 }
 
 .album {
 	background: #B10000;
-	width: 100%;
+	float: left;
+	width: 50%;
 }
+
+.album:hover {
+   background-color:#810303;
+ }
 
 .cd-album {
 	background: #2C607C;
+  	float: left;
+	width: 50%;
+}
+
+.cd-album:hover {
+	background-color: #265067;
 }
 
 .dvd {
 	background: #C15703;
+  	float: left;
+	width: 50%;
 }
 
-.right-column {
-	float: right;
-	width: 50%
+.dvd:hover {
+	background-color: #A24903;
 }
 
 .single {
 	background: #DB3E3E;
+  	float: left;
+	width: 50%;
+}
+
+.single:hover {
+	background-color: #C23B3B;
 }
 
 .cd-single {
 	background: #6591AD;
+  	float: left;
+	width: 50%;
+}
+
+.cd-single:hover {
+	background-color: #5A839D;
 }
 
 .mc {
 	background: #C27538;
+  	float: left;
+	width: 50%;
+}
+
+.mc:hover {
+	background-color: #A6642F;
 }
 
 /* ====== BOTTOM NAVIGATION ====== */
@@ -139,16 +156,57 @@ img[src*="mc.png"] {
 	clear: both;
 }
 
-/*.item-list-icon {
-	position: absolute;
+.bottom-nav ol li { 
+    display: inline-block;
+    list-style-type: none;
+    padding-left: 1.5em;
+    padding-right: 1.5em;
+    padding-top: 1em;
+}
+
+.item-list-icon {
+	background: url('../images/item-list-icon.png') no-repeat;
+	height: 2.688em;
+	width: 3.125em;
+	text-indent: 100%;
+	white-space: nowrap;
+	overflow: hidden;
+	margin-top: 1.5em;
+	margin-left: 10%;
 }
 
 .add-item-icon {
-	position: absolute;
+	background: url('../images/add-item-icon.png') no-repeat;
+	height: 2.500em;
+	width: 2.688em;
+	text-indent: 100%;
+	white-space: nowrap;
+	overflow: hidden;
+	margin-top: 1.5em;
+	margin-left: 24%;
 }
 
+.search-icon {
+	background: url('../images/search-icon.png') no-repeat;
+	height: 2.688em;
+	width: 2.688em;
+	text-indent: 100%;
+	white-space: nowrap;
+	overflow: hidden;
+	margin-top: 1.5em;
+	margin-left: 25%;
+}
 
-}*/
+.item-list-icon:hover {
+	background: url('../images/item-list-icon-green.png') no-repeat;
+}
 
+.add-item-icon:hover {
+	background: url('../images/add-item-icon-green.png') no-repeat;
+}
 
+.search-icon:hover {
+	background: url('../images/search-icon-green.png') no-repeat;
+}
 
+/* ====== END ====== */
