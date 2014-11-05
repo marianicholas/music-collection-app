@@ -1,0 +1,139 @@
+body {
+	font-family: 'Alegreya Sans', sans-serif;
+	font-weight: 400; 
+	font-style: normal;
+	color: #4A4A4A;
+	background: #302A2C;
+}
+
+.container {
+	width: 100%;
+}
+
+.header {
+	background: #000;
+	color: #fff;
+	width: 100%;
+	padding: 30px 0;
+	z-index: 1;
+	text-align: center;
+}
+
+.content {
+}
+
+.categories a {
+	display: block;
+	width: 50%;
+	height: calc((100vh - 170px) / 3); /* 75 + 95 */
+	float: left;
+	position: relative;
+	color: #fff;
+	text-transform: uppercase;
+	text-decoration: none;
+}
+
+.categories a div {
+	padding-top: 20px;
+	width: 172px;
+	margin: 0 auto;
+	text-align: center;
+}
+
+.categories a span:first-child {
+	background: center bottom no-repeat;
+	display:block;
+	padding-top: 200px;
+}
+
+.categories a span:last-child {
+	display: block;
+	padding-top: 1em;
+	font-size: 1.4em;
+}
+
+
+
+
+/* ====== BOTTOM NAVIGATION ====== */
+
+.bottom-nav {
+	position: fixed;
+	bottom: 0;
+	height: 95px;
+	width: 100%;
+	background: #463E41;
+	-moz-box-shadow: inset 0px 2px 4px 0px rgba(0,0,0,0.50);
+	box-shadow: inset 0px 2px 4px 0px rgba(0,0,0,0.50);
+}
+
+ol {
+	margin: 0;
+	padding: 0;
+}
+
+.item-list-icon, 
+.add-item-icon, 
+.search-icon {
+}
+
+.item-list-icon a,
+.add-item-icon a,
+.search-icon a {
+    display: inline-block;
+	width: 33.33%;
+	float: left;
+	height: 0;
+	padding-top: 95px;
+	overflow: hidden;
+}
+
+.item-list-icon a {
+	background: url('../images/item-list-icon.png') no-repeat center center;
+}
+
+.add-item-icon a {
+	background: url('../images/add-item-icon.png') no-repeat center center;
+}
+
+.search-icon a {
+	background: url('../images/search-icon.png') no-repeat center center;
+}
+
+.item-list-icon a:hover {
+	background-image: url('../images/item-list-icon-green.png');
+}
+
+.add-item-icon a:hover {
+	background-image: url('../images/add-item-icon-green.png');
+}
+
+.search-icon a:hover {
+	background-image: url('../images/search-icon-green.png');
+}
+
+
+/* ====== CATEGORY BACKGROUND ====== */
+
+.cat-album div span:first-child, .cat-single div span:first-child {
+	background-image: url(../images/vinyl.png);
+}
+.cat-album { background: #B10000; }
+.cat-album:hover { background-color: #810303; }
+.cat-single { background: #DB3E3E; }
+.cat-single:hover { background-color: #C23B3B;}
+
+.cat-cdalbum div span:first-child, .cat-cdsingle div span:first-child {
+	background-image: url(../images/cd.png);
+}
+.cat-cdalbum { background: #2C607C;}
+.cat-cdalbum:hover { background-color: #265067;}
+.cat-cdsingle { background: #6591AD;}
+.cat-cdsingle:hover { background-color: #5A839D;}
+
+.cat-dvd { background: #C15703 } 
+.cat-dvd div span:first-child { background-image: url(../images/dvd.png); }
+.cat-dvd:hover {background-color: #A24903;}
+.cat-mc { background: #C27538; }
+.cat-mc div span:first-child { background-image: url(../images/mc.png); }
+.cat-mc:hover { background-color: #A6642F; }

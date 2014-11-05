@@ -1,17 +1,17 @@
 ::-webkit-input-placeholder {
-   color: #777C1D;
+   color: ##9B9B9B;
 }
 
 :-moz-placeholder { /* Firefox 18- */
-   color: #777C1D;  
+   color: ##9B9B9B;  
 }
 
 ::-moz-placeholder {  /* Firefox 19+ */
-   color: #777C1D;  
+   color: ##9B9B9B;  
 }
 
 :-ms-input-placeholder {  
-   color: #777C1D;  
+   color: ##9B9B9B;  
 }
 
 * {
@@ -54,13 +54,8 @@ body {
 	font-weight: 600;
 	font-style: italic;
 	color: #FFFFFF;
-	font-size: 1.65em;
+	font-size: 3.5em;
 	text-align: center;
-	margin-bottom: 2%;
-}
-
-.logo h1 {
-	margin-top: 0;
 }
 
 /* ====== ITEM BOXES ====== */
@@ -84,24 +79,29 @@ img[src*="mc.png"] {
 	padding: 0% 30% 0% 30%;
 }
 
-.album {
-	background: #B10000;
+.album,
+.cd-album,
+.dvd,
+.single,
+.cd-single,
+.dvd,
+.mc {
 	float: left;
 	width: 50%;
-	height: 14em;
+	height: 13.5em;
 	padding-top: 2em;
 }
 
+.album {
+	background: #B10000;
+}
+
 .album:hover {
-   background-color:#810303;
+   	background-color:#810303;
  }
 
 .cd-album {
 	background: #2C607C;
-  	float: left;
-	width: 50%;
-	height: 14em;
-	padding-top: 2em;
 }
 
 .cd-album:hover {
@@ -110,10 +110,6 @@ img[src*="mc.png"] {
 
 .dvd {
 	background: #C15703;
-  	float: left;
-	width: 50%;
-	height: 14em;
-	padding-top: 2em;
 }
 
 .dvd:hover {
@@ -122,10 +118,6 @@ img[src*="mc.png"] {
 
 .single {
 	background: #DB3E3E;
-  	float: left;
-	width: 50%;
-	height: 14em;
-	padding-top: 2em;
 }
 
 .single:hover {
@@ -134,10 +126,6 @@ img[src*="mc.png"] {
 
 .cd-single {
 	background: #6591AD;
-  	float: left;
-	width: 50%;
-	height: 14em;
-	padding-top: 2em;
 }
 
 .cd-single:hover {
@@ -146,10 +134,6 @@ img[src*="mc.png"] {
 
 .mc {
 	background: #C27538;
-  	float: left;
-	width: 50%;
-	height: 14em;
-	padding-top: 2em;
 }
 
 .mc:hover {
@@ -230,14 +214,13 @@ ol {
 	background: #5A5053;
   	float: left;
 	width: 50%;
-	height: 14em;
+	height: 13.5em;
 	padding-top: 2em;
 }
 
-
 /* ====== EMPTY MODAL ====== */
 
-/*.content-empty-modal {
+.content-empty-modal {
 	position: absolute;
 	left: 50%;
 	margin: 8em 0 0 -12.5em;
@@ -271,7 +254,7 @@ ol {
 	font-size: 1.2em;
 	letter-spacing: 1px;
 	color: #FFFFFF;
-	padding: 14px 17px 14px 17px;
+	padding: 13px 17px 13px 17px;
 	-moz-box-shadow: 0px 0px 2px 0px rgba(0,0,0,0.22), 0px 2px 2px 0px rgba(0,0,0,0.30);
 	box-shadow: 0px 0px 2px 0px rgba(0,0,0,0.22), 0px 2px 2px 0px rgba(0,0,0,0.30);
 }
@@ -280,4 +263,57 @@ img[src*="close-icon.png"] {
 	position: absolute;
 	right: 12px;
 	top: 12px;
+}
+
+/* ====== ADD ALBUM BACKGROUND ====== */
+
+/*.content-bg {
+	overflow: scroll;
 }*/
+
+.top-left-bg,
+.top-right-bg,
+.middle-left-bg,
+.middle-right-bg,
+.bottom-left-bg,
+.bottom-right-bg {
+	background: #EEEEEE;
+  	float: left;
+	width: 50%;
+	height: 13.5em;
+	padding-top: 2em;
+}
+
+/* ====== ADD ALBUM FORM ====== */
+
+.add-album-form {
+	position:absolute;
+	padding: 3em;
+}
+
+input[type=text] {
+  	background: none;
+  	font-family: AlegreyaSans-Regular;
+	font-size: 1em;
+	color: #9B9B9B;
+	letter-spacing: .3px;
+  	border: none;
+  	border-bottom: solid 1px #ccc;
+  	padding-bottom: 5px;
+  	margin-bottom: 3em;
+  	width: 100%;
+}
+
+input[type=text]:focus {
+	border-bottom: solid 1px #009688;
+	outline: none;
+	color: #4A4A4A;
+}
+
+.add-album-form p {
+	font-family: AlegreyaSans-Regular;
+	font-size: 1em;
+	color: #9B9B9B;
+	letter-spacing: .3px;
+	text-transform: none;
+}
