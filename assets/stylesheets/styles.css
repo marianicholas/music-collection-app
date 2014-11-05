@@ -35,7 +35,6 @@ body {
 
 .container {
 	max-width: 600px;
-	height: 1000px;
 	margin: 0 auto;
 }
 
@@ -82,13 +81,15 @@ img[src*="vinyl.png"],
 img[src*="dvd.png"],
 img[src*="cd.png"],
 img[src*="mc.png"] {
-	padding: 10% 30% 0% 30%;
+	padding: 0% 30% 0% 30%;
 }
 
 .album {
 	background: #B10000;
 	float: left;
 	width: 50%;
+	height: 14em;
+	padding-top: 2em;
 }
 
 .album:hover {
@@ -99,6 +100,8 @@ img[src*="mc.png"] {
 	background: #2C607C;
   	float: left;
 	width: 50%;
+	height: 14em;
+	padding-top: 2em;
 }
 
 .cd-album:hover {
@@ -109,6 +112,8 @@ img[src*="mc.png"] {
 	background: #C15703;
   	float: left;
 	width: 50%;
+	height: 14em;
+	padding-top: 2em;
 }
 
 .dvd:hover {
@@ -119,6 +124,8 @@ img[src*="mc.png"] {
 	background: #DB3E3E;
   	float: left;
 	width: 50%;
+	height: 14em;
+	padding-top: 2em;
 }
 
 .single:hover {
@@ -129,6 +136,8 @@ img[src*="mc.png"] {
 	background: #6591AD;
   	float: left;
 	width: 50%;
+	height: 14em;
+	padding-top: 2em;
 }
 
 .cd-single:hover {
@@ -139,6 +148,8 @@ img[src*="mc.png"] {
 	background: #C27538;
   	float: left;
 	width: 50%;
+	height: 14em;
+	padding-top: 2em;
 }
 
 .mc:hover {
@@ -156,57 +167,117 @@ img[src*="mc.png"] {
 	clear: both;
 }
 
-.bottom-nav ol li { 
+ol {
+	margin: 0;
+	padding: 0;
+}
+
+.item-list-icon, 
+.add-item-icon, 
+.search-icon {
     display: inline-block;
     list-style-type: none;
-    padding-left: 1.5em;
-    padding-right: 1.5em;
-    padding-top: 1em;
+	width: 33%;
 }
 
-.item-list-icon {
-	background: url('../images/item-list-icon.png') no-repeat;
-	height: 2.688em;
-	width: 3.125em;
-	text-indent: 100%;
+.item-list-icon a,
+.add-item-icon a,
+.search-icon a {
+	display: block;
 	white-space: nowrap;
 	overflow: hidden;
-	margin-top: 1.5em;
-	margin-left: 10%;
-}
-
-.add-item-icon {
-	background: url('../images/add-item-icon.png') no-repeat;
-	height: 2.500em;
-	width: 2.688em;
+	padding: 38px 0;
 	text-indent: 100%;
-	white-space: nowrap;
-	overflow: hidden;
-	margin-top: 1.5em;
-	margin-left: 24%;
 }
 
-.search-icon {
-	background: url('../images/search-icon.png') no-repeat;
-	height: 2.688em;
-	width: 2.688em;
-	text-indent: 100%;
-	white-space: nowrap;
-	overflow: hidden;
-	margin-top: 1.5em;
-	margin-left: 25%;
+.item-list-icon a {
+	background: url('../images/item-list-icon.png') no-repeat center center;
 }
 
-.item-list-icon:hover {
-	background: url('../images/item-list-icon-green.png') no-repeat;
+.add-item-icon a {
+	background: url('../images/add-item-icon.png') no-repeat center center;
 }
 
-.add-item-icon:hover {
-	background: url('../images/add-item-icon-green.png') no-repeat;
+.search-icon a {
+	background: url('../images/search-icon.png') no-repeat center center;
 }
 
-.search-icon:hover {
-	background: url('../images/search-icon-green.png') no-repeat;
+.item-list-icon a:hover {
+	background-image: url('../images/item-list-icon-green.png');
 }
 
-/* ====== END ====== */
+.add-item-icon a:hover {
+	background-image: url('../images/add-item-icon-green.png');
+}
+
+.search-icon a:hover {
+	background-image: url('../images/search-icon-green.png');
+}
+
+/* ====== EMPTY CONTAINER ====== */
+
+.content-empty {
+	max-width: 600px;
+	margin: 0 auto;
+}
+
+.top-left,
+.top-right,
+.middle-left,
+.middle-right,
+.bottom-left,
+.bottom-right {
+	background: #5A5053;
+  	float: left;
+	width: 50%;
+	height: 14em;
+	padding-top: 2em;
+}
+
+
+/* ====== EMPTY MODAL ====== */
+
+/*.content-empty-modal {
+	position: absolute;
+	left: 50%;
+	margin: 8em 0 0 -12.5em;
+	width: 25em;
+	height: 15em;
+	border-radius: 2px;
+	background: #EEEEEE;
+	-moz-box-shadow: 0px 15px 12px 0px rgba(0,0,0,0.22), 0px 19px 38px 0px rgba(0,0,0,0.30);
+	box-shadow: 0px 15px 12px 0px rgba(0,0,0,0.22), 0px 19px 38px 0px rgba(0,0,0,0.30);
+}
+
+.empty-text {
+	font-size: 2.5em;
+	text-align: center;
+	color: #000000;
+	font-style: italic;
+	margin-top: 1.65em;
+	margin-bottom: .4em;
+}
+
+.content-empty-modal button {
+	position: absolute;
+	left: 50%;
+	margin: 0 0 0 -6em;
+	border: 0;
+	border-radius: 2px;
+	background: #009688;
+	font-family: "Alegreya Sans";
+	font-weight: 400;
+	text-transform: uppercase;
+	font-size: 1.2em;
+	letter-spacing: 1px;
+	color: #FFFFFF;
+	padding: 14px 17px 14px 17px;
+	-moz-box-shadow: 0px 0px 2px 0px rgba(0,0,0,0.22), 0px 2px 2px 0px rgba(0,0,0,0.30);
+	box-shadow: 0px 0px 2px 0px rgba(0,0,0,0.22), 0px 2px 2px 0px rgba(0,0,0,0.30);
+}
+
+img[src*="close-icon.png"] {
+	position: absolute;
+	right: 12px;
+	top: 12px;
+}*/
