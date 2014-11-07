@@ -28,6 +28,10 @@ body {
 	background: #302A2C;
 }
 
+img {
+	max-width: 100%;
+}
+
 /* ====== HEADER ====== */
 
 .header {
@@ -341,44 +345,38 @@ textarea:focus {
 	outline: none;
 }
 
-.add-album-art a div {  /* text */
+.add-album-art {  /* text */
 	text-align: center;
-	font-weight: 400;
+	padding-top: 7em;
 	text-transform: uppercase;
 	font-size: .9em;
 	letter-spacing: 1.1px;
+	line-height: 1.2em;
+	width: 15em;
+	height: 15em;
+	background: url(../images/album-art.png) center no-repeat;
+	display: block;
+	margin: 0 auto;
 }
 
-.add-album-art a:link {
+.add-album-art:link {
     text-decoration: none;
     color: #009688;
 }
 
-.add-album-art a:visited {
+.add-album-art:visited {
     text-decoration: none;
     color: #009688;
 }
 
-.add-album-art a:hover {
+.add-album-art:hover {
     text-decoration: none;
     color: #009688;
 }
 
-.add-album-art a:active {
+.add-album-art:active {
     text-decoration: none;
     color: #009688;
-}
-
-.add-album-art a span:first-child {
-	background: center no-repeat;
-	background-size: 20%;
-	display:block;
-	padding-top: 150px;
-	padding-bottom: 0;
-}
-
-.add-album-art div span:first-child {
-	background-image: url(../images/album-art.png);
 }
 
 .add-album-button {
@@ -390,7 +388,6 @@ textarea:focus {
 	text-transform: uppercase;
 	font-size: .9em;
 	letter-spacing: 1.1px;
-	margin-left: 3em;
 	margin-top: 4em;
 	margin-bottom: 1em;
 	color: #FFFFFF;
@@ -403,57 +400,52 @@ textarea:focus {
 
 /* ====== VIEW ALL ITEMS ====== */
 
-.album-art a {
-	display: block;
+.item {
+	display: inline-block;
 	width: 50%;
 	float: left;
 	position: relative;
+	line-height: 0;
 }
 
-.album-art a div {  /* text */
-	margin: 0 auto;
-	text-align: center;
+.item img {
+	width: 100%;
 }
 
-.album-art a span:first-child {
-	background: center no-repeat;
-	background-size: 100%;
-	display:block;
-	padding-top: 305px;
+/* ====== ITEM HOVER ====== */
+
+.meta-info {
+	position: absolute;
+	background-color: rgba(0, 0, 0, .6);
+	left: 0;
+	right: 0;
+	top: 0;
+	bottom: 0;
+	display: none;
+	opacity: 0;
 }
 
-.album-art a span:last-child {	/* text */
+.item:hover .meta-info {
 	display: block;
+	opacity: 1;
+	transition: opacity 1s ease-in-out; 
+}
+
+/*.item span {
 	visibility: hidden;
+}*/
+
+.meta-info-header {
+	text-align: center;
+	padding-top: 7em;
+	text-transform: uppercase;
+	font-size: .9em;
+	letter-spacing: 1.1px;
+	line-height: 1.2em;
+	width: 10em;
+	height: 6em;
+	background: url(../images/vinyl.png) center no-repeat;
+	background-size: 50%;
+	display: block;
+	margin: 0 auto;
 }
-
-.item-1 div span:first-child {
-	background-image: url(../images/abba-coke.jpg);
-}
-
-.item-2 div span:first-child {
-	background-image: url(../images/abba-japan.jpg);
-}
-
-.item-3 div span:first-child {
-	background-image: url(../images/abba-live.jpg);
-}
-
-.item-4 div span:first-child {
-	background-image: url(../images/abba-greatest.jpg);
-}
-
-.item-5 div span:first-child {
-	background-image: url(../images/paul.jpg);
-}
-
-.item-6 div span:first-child {
-	background-image: url(../images/abba-arrival.jpg);
-}
-
-
-
-
-
-
-
