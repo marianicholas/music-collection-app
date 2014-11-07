@@ -34,6 +34,7 @@ img {
 
 /* ====== HEADER ====== */
 
+
 .header {
 	background: #000;
 	color: #fff;
@@ -202,20 +203,9 @@ ol {
 
 /* ====== ZERO STATE ====== */
 
+
 .empty .content {
 	background: #585154;
-}
-
-.content-empty-modal {
-	position: absolute;
-	left: 50%;
-	margin: 10em 0 0 -12.5em;
-	width: 25em;
-	height: 15em;
-	border-radius: 2px;
-	background: #EEEEEE;
-	-moz-box-shadow: 0px 15px 12px 0px rgba(0,0,0,0.22), 0px 19px 38px 0px rgba(0,0,0,0.30);
-	box-shadow: 0px 15px 12px 0px rgba(0,0,0,0.22), 0px 19px 38px 0px rgba(0,0,0,0.30);
 }
 
 .empty-text {
@@ -396,7 +386,7 @@ textarea:focus {
 
 .add-album-button:hover {
     background: #128176;
- }
+}
 
 /* ====== VIEW ALL ITEMS ====== */
 
@@ -428,24 +418,163 @@ textarea:focus {
 .item:hover .meta-info {
 	display: block;
 	opacity: 1;
-	transition: opacity 1s ease-in-out; 
 }
-
-/*.item span {
-	visibility: hidden;
-}*/
 
 .meta-info-header {
 	text-align: center;
-	padding-top: 7em;
+	padding-top: 6em;
+	padding-bottom: 2em;
 	text-transform: uppercase;
 	font-size: .9em;
 	letter-spacing: 1.1px;
-	line-height: 1.2em;
-	width: 10em;
-	height: 6em;
-	background: url(../images/vinyl.png) center no-repeat;
-	background-size: 50%;
+	line-height: 1em;
+	width: 100%;
+	height: 2em;
+	background: url(../images/vinyl-sm.png) 50% 30% no-repeat;
 	display: block;
-	margin: 0 auto;
+	color: #fff;
+	background-color: rgba(177, 0, 0, .7);
+}
+
+.meta-info a:link {
+    text-decoration: none;
+    color: #fff;
+}
+
+.meta-info a:visited {
+    text-decoration: none;
+    color: #fff;
+}
+
+.meta-info a:hover {
+    text-decoration: none;
+    color: #fff;
+}
+
+.meta-info a:active {
+    text-decoration: none;
+    color: #fff;
+}
+ 
+.meta-info h1, p {
+	text-align: center;
+	padding-top: 1em;
+	height: 1.5em;
+	color: #fff;
+}
+
+.meta-info h1 {
+	text-transform: uppercase;
+	font-size: 125%;
+	letter-spacing: 1.1px;
+}
+
+.meta-info p {
+	font-weight: 300;
+	letter-spacing: 1px;
+}
+
+.view-detail-button {
+	border: 0;
+	border-radius: 2px;
+	background: #009688;
+	font-family: "Alegreya Sans";
+	font-weight: 400;
+	text-transform: uppercase;
+	font-size: .7em;
+	letter-spacing: 1px;
+	color: #FFFFFF;
+	padding: 6px 13px 6px 13px;
+	margin-top: 1.5em;
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+.view-detail-button:hover {
+    background: #128176;
+}
+
+/* ====== ITEM DETAIL ====== */
+
+.view-item-detail .content {
+	background: #eee;
+}
+
+.view-item-detail img {
+	width: 60%;
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+	margin-top: 1em;
+	margin-bottom: 1.7em;
+}
+
+.left-labels {
+	display: block;
+	width: 20%;
+	float: left;
+}
+
+.right-values {
+	display: block;
+	width: 80%;
+	float: right;
+}
+
+h4 {
+	font-family: AlegreyaSans-Medium;
+	font-size: .8em;
+	color: #B0B0B0;
+	text-transform: uppercase;
+	padding-left: 4em;
+	margin-bottom: 1.8em;
+}
+
+h3 {
+	display: block;
+	text-align: left;
+	color: #4A4A4A;
+	padding-left: 3em;
+	margin-bottom: 1.25em;
+}
+
+h3:last-child {
+	line-height: 1.2em;
+}
+
+.bottom-buttons {
+	clear:both;
+}
+
+.edit-album-button, .delete-album-button {
+	border: 0;
+	border-radius: 2px;
+	font-family: "Alegreya Sans";
+	font-weight: 400;
+	text-transform: uppercase;
+	font-size: .9em;
+	letter-spacing: 1.1px;
+	margin-left: 2em;
+	color: #FFFFFF;
+	margin-bottom: .75em;
+}
+
+.edit-album-button {
+	background: #009688;
+	margin-top: 2em;
+	padding: 13px 22px 13px 22px;
+}
+
+.edit-album-button:hover {
+    background: #128176;
+}
+
+ .delete-album-button {
+	background: #C13333;
+	padding: 13px 20px 13px 20px;
+}
+
+.delete-album-button:hover {
+    background: #810303;
 }
