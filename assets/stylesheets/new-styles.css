@@ -292,7 +292,8 @@ input[type=text].cat-no {
 }
 
 label {
-	font-family: AlegreyaSans-Regular;
+  	font-family: 'Alegreya Sans', sans-serif;
+  	font-weight: 400;
 	font-size: 1.2em;
 	color: #9B9B9B;
 	letter-spacing: .3px;
@@ -300,24 +301,30 @@ label {
 }
 
 select[name=release-years] {
+	font-family: 'Alegreya Sans', sans-serif;
+  	font-weight: 400;
 	font-size: 16px;
 	border: 0;
-	font-family: AlegreyaSans-Regular;
 	margin-right: 3em;
 }
 
 select[name=formats]{
+	font-family: 'Alegreya Sans', sans-serif;
+  	font-weight: 400;
 	font-size: 16px;
 	border: 0;
-	font-family: AlegreyaSans-Regular;
 	margin-right: 3em;
 }
 
 small {
+	font-family: 'Alegreya Sans', sans-serif;
+  	font-weight: 400;
 	font-size: .8em;
 }
 
 input[type=radio] {
+	font-family: 'Alegreya Sans', sans-serif;
+  	font-weight: 400;
 	margin-top: 1.7em;
 }
 
@@ -326,7 +333,8 @@ textarea {
 	border: none;
   	border-bottom: solid 1px #ccc;
   	background: none;
-  	font-family: AlegreyaSans-Regular;
+  	font-family: 'Alegreya Sans', sans-serif;
+  	font-weight: 400;
 	font-size: 1em;
   	margin-bottom: 2em;
 }
