@@ -272,7 +272,8 @@ fieldset {
 
 input[type=text] {
   	background: none;
-  	font-family: AlegreyaSans-Regular;
+  	font-family: 'Alegreya Sans', sans-serif;
+  	font-weight: 400;
 	font-size: 1.2em;
 	letter-spacing: .3px;
   	border: none;
