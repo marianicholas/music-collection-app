@@ -1,0 +1,22 @@
+@media all and (max-height: 600px) {
+
+	.cat-album div span:first-child,
+	.cat-single div span:first-child,
+	.cat-cdalbum div span:first-child,
+	.cat-cdsingle div span:first-child,
+	.cat-dvd div span:first-child,
+	.cat-mc div span:first-child {
+    background-image: none;
+   }
+
+	.categories a div {
+		margin: -7em;
+	}
+}
+
+@media all and (max-height: 500px) {
+
+	.categories a div {
+		margin: -9em;
+	}
+}
